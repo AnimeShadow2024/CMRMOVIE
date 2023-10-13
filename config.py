@@ -10,19 +10,19 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6581279816:AAHxPchpJ1xvU2tMLQ5j60518VznDPBVSLI")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "27984575"))
+APP_ID = int(os.environ.get("APP_ID", ""))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "c43cf36d63bf45d1eeedf3860822588c")
+API_HASH = os.environ.get("API_HASH", "")
 
 #Your db channel Id
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001859300827"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5493260414"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6109807345"))
 
 #Port
 PORT = os.environ.get("PORT", "8040")
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a file store bot Powered by @Animes_xyz ⚡</b>.")
 try:
-    ADMINS=[]
+    ADMINS=[5493260414]
     for x in (os.environ.get("ADMINS", "5086525318").split()):
         ADMINS.append(int(x))
 except ValueError:
@@ -62,7 +62,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "🚫 Please Avoid Direct Messages. I'm Here merely for file sharing!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6208886200)
+ADMINS.append(5493260414)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
